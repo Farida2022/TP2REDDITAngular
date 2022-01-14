@@ -1,0 +1,18 @@
+<form class="ui large formsegment">
+  <h3 class="ui header"> Add a link</h3>
+  <div class="field">
+    <label for="title">Title:</label><input name="title" #newTitle>
+  </div>
+  <div class="field">
+    <label for="link">Link:</label> <input name="link" #newLink>
+  </div>
+  <button (click)="addArticle(newTitle,newLink)">Submit Link</button>
+
+  </form>
+  <div>
+  <app-article
+  *ngFor="let article of sortedArticle()"
+  [article]="article" (deleteEvent)="supprimerArticle($event)" (updateEvent)="UpdateArticle($event)">
+
+  </app-article>
+</div>
