@@ -1,0 +1,23 @@
+.conteneur-formulaire{
+  align-content: center;
+    width: 70%;
+    margin: auto;
+    border: solid 3px black;
+    border-radius: 5px;
+}
+
+.btn{
+  position: relative;
+  left: 77%;
+  top: -23%;
+  font-family: "Segoe UI",Arial,sans-serif;
+  margin-bottom: 8px;
+}
+
+.field{
+  text-align: center;
+}
+
+.ui{
+  text-align: center;
+}

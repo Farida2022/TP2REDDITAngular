@@ -1,0 +1,10 @@
+.conteneur-article{
+  width: 80%;
+  margin: auto;
+  padding-left: 4%;
+  border: solid 2px  black;
+  border-radius: 10 px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

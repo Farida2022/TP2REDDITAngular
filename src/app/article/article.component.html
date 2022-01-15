@@ -1,19 +1,21 @@
-<h3>article {{article.title}}</h3>
-<p> Votes {{article.votes}}</p>
-<p> Link {{article.link}}</p>
-<p> ID {{article.id}}</p>
-<p><button (click)="voteUp()">vote up</button>
-  <button (click)="voteDown()">vote down</button>
-  <button (click)="deleteEvent.emit(article)">delete</button>
-  <button (click)="Update()">Update</button>
+<div class="conteneur-article">
+  <h3>Article : {{article.title}}</h3>
+  <p> Link : {{article.link}}</p>
+  <p> Votes : {{article.votes}}</p>
 
-<form>
-  <div *ngIf="updatearticle">
-    <h3> Update </h3>
-    <label for="title">Title:</label><input name="title" #upTitle [value]="article.title">
-    <label for="link">Title:</label><input name="link" #upLink [value]="article.link">
-    <button (click)="UpdateArticle(upTitle,upLink)">Update</button>
-  </div>
+  <p><button (click)="voteUp()">vote up</button>
+    <button (click)="voteDown()">vote down</button>
+    <button (click)="deleteEvent.emit(article)">delete</button>
+    <button (click)="Update()">Update</button>
+
+  <form>
+    <div *ngIf="updatearticle">
+      <h3> Update </h3>
+      <label for="title">Title:</label><input name="title" #upTitle [value]="article.title">
+      <label for="link">Title:</label><input name="link" #upLink [value]="article.link">
+      <button (click)="UpdateArticle(upTitle,upLink)">Update</button>
+    </div>
 
 
-</form>
+  </form>
+</div>
